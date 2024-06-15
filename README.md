@@ -2,7 +2,7 @@
 ## Extract textures and PBR materials from random images using unsupervised statical approach
 ## Generation Code for infinitexture: Unsupervised extraction of textures  and PBR materials from images
 
-This code used to generate the Vastexture repository available at: [https://sites.google.com/view/infinitexture/home](https://sites.google.com/view/infinitexture/home), [https://zenodo.org/records/11555444](https://zenodo.org/records/11555444)
+This code used to generate the Vastexture repository available at: [1](https://sites.google.com/view/infinitexture/home), [2](https://zenodo.org/records/11555444)
 # 1. Content:
 Extract_Textures.py: Receives a folder of random images and extracts regions of uniform textures, crop and save to file.  
 Turn_Texture_To_PBR.py: Turn images of uniform textures (1) into PBR materials.
