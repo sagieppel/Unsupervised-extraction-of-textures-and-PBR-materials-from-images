@@ -2,7 +2,9 @@
 Extract textures and PBR materials from random images using unsupervised statistical approach
 Generation Code for infinitexture: Unsupervised extraction of textures  and PBR materials from images
 
-This code used to generate the Vastexture repository available at: [1](https://sites.google.com/view/infinitexture/home), [2](https://zenodo.org/records/11555444)
+This code used to generate the Vastexture repository available at: [1](https://sites.google.com/view/infinitexture/home), [2](https://zenodo.org/records/11555444).
+
+
 Details could be find at this document: [Learning Zero-Shot Material States Segmentation, by
 Implanting Natural Image Patterns in Synthetic Data](https://arxiv.org/pdf/2403.03309)
 # 1. Content:
