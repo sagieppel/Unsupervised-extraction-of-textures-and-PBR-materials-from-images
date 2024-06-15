@@ -22,12 +22,12 @@ Extracted textures will appear out_dir/large_textures
 ### Additional parameters:
 Note the parameters below should be set depending on the image sizes you used and the quality and size of texture you want. The default value goes well with the segment_anything repository.
 
-{{Tile_sizes = [75]}}:  This defines the size of the cell in the texture the larger this parameter is the larger the extracted texture maps will be extracted. Note this is an array and can contain more than one cell size [70,80]... Good size for open_images repository is 40. Good size for segment-anything repository is 75. 
+{{Tile_sizes = [75]}} :  This defines the size of the cell in the texture the larger this parameter is the larger the extracted texture maps will be extracted. Note this is an array and can contain more than one cell size [70,80]... Good size for open_images repository is 40. Good size for segment-anything repository is 75. 
 
 
 {{Min_tiles2map = 7}} : number of cells in texture across one dimension  the larger this number the more uniform the textures will be and the larger they will be. 
 
-{{Sim_thresh = 0.5}}: How similar the region in textures should be the higher this number the higher the texture uniformity.
+{{Sim_thresh = 0.5}} : How similar the region in textures should be the higher this number the higher the texture uniformity.
 
 Note while it's possible to search for larger and more uniform textures  by increasing the above parameters, this will also lead to less textures being found per image. The above value works good for segmenting anything repository for larger images you might increase them  and vice versa. 
 
