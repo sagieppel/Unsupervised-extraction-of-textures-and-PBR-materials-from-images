@@ -88,5 +88,6 @@ height...) for the SVBRDF/PBR material.
 Code is available:
 https://creativecommons.org/public-domain/cc0/
 https://segment-anything.com/dataset/index.html
-Images in sample images were taken from Segment_anything repository and available under segment anything dataset license.
+
+Sample images in **in_images** were taken from Segment_anything repository and available under segment anything dataset license.
 
