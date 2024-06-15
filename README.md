@@ -78,6 +78,8 @@ a) Divide the image into a grid. For every grid cell extract distribution of col
 all the cells have similar distributions as a uniform texture. Pick random channels from the extracted
 texture image, augment them, and use the resulting maps as property maps (roughness, metallic,
 height...) for the SVBRDF/PBR material.
+![Example Extration Scheme 1](Textures.jpg)
+![Example Extration Scheme 2](PBRS.jpg)
 
 
 ## License: 
