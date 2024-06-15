@@ -3,6 +3,8 @@
 ## Generation Code for infinitexture: Unsupervised extraction of textures  and PBR materials from images
 
 This code used to generate the Vastexture repository available at: [1](https://sites.google.com/view/infinitexture/home), [2](https://zenodo.org/records/11555444)
+Details could be find at this document: [Learning Zero-Shot Material States Segmentation, by
+Implanting Natural Image Patterns in Synthetic Data](https://arxiv.org/pdf/2403.03309)
 # 1. Content:
 Extract_Textures.py: Receives a folder of random images and extracts regions of uniform textures, crop and save to file.  
 Turn_Texture_To_PBR.py: Turn images of uniform textures (1) into PBR materials.
@@ -68,6 +70,13 @@ a) Divide the image into a grid. For every grid cell extract distribution of col
 all the cells have similar distributions as a uniform texture. Pick random channels from the extracted
 texture image, augment them, and use the resulting maps as property maps (roughness, metallic,
 height...) for the SVBRDF/PBR material.
+
+# How this works:
+a) Divide the image into a grid. For every grid cell extract distribution of colors and gradients. Identify a region for which
+all the cells have similar distributions as a uniform texture. Pick random channels from the extracted
+texture image, augment them, and use the resulting maps as property maps (roughness, metallic,
+height...) for the SVBRDF/PBR material.
+
 
 ## License: 
 Code is available:
