@@ -180,6 +180,7 @@ image_dir = "in_images/"#Image dir from wich textures will be extracted
 sim_thresh = 0.5  #minimal similarity  between cells for uniform texutre
 max_im_size=2200 # maximal image size (shrink  if image is larger)
 save_by_thresh_and_size=False
+image_type=".jpg" # read only this images leave empty if read everythin
 out_dir = "extracted_textures/" # folder were output will be saved will be saved
 
 
@@ -211,7 +212,7 @@ if save_by_thresh_and_size:
 #image_dir = "/media/breakeroftime/2T/Data_zoo/dms_v1_labels/images/test/"
 #---------------go over all images in folder image_dir and extract uniform textures and saved to out_dir----------------------------------------------------------------
 for num,fl in enumerate(os.listdir(image_dir)):
-            if not ".jpg" in fl: continue
+            if len(image_type)>0 and (not image_type in fl): continue
 
             if os.path.exists(done_files+"/"+fl[:-3]+"txt"): # if already done skip
                 print(num,fl,":  File already done")
